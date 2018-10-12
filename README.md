@@ -2,6 +2,10 @@
 
 > node app.js
 
-### GET /validate?email=${EMAIL}
+### GET
 
-### RES {valid: boolean}
+/validate?email=${EMAIL}
+
+### RES
+
+{valid: boolean}
