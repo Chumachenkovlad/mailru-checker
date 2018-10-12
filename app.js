@@ -39,6 +39,7 @@ app.get('/validate', async (req, res, next) => {
     if ('exists' in data.body) {
       res.json({ valid: !data.body.exists });
       res.status(200);
+      next();
     }
 
     res.json(checkRes.data.body);
